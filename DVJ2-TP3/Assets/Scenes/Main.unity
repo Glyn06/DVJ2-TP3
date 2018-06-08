@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -113,17 +113,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &212706963
+--- !u!1 &62526941
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 212706967}
-  - component: {fileID: 212706966}
-  - component: {fileID: 212706965}
-  - component: {fileID: 212706964}
+  - component: {fileID: 62526945}
+  - component: {fileID: 62526944}
+  - component: {fileID: 62526943}
+  - component: {fileID: 62526942}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -131,26 +131,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &212706964
+--- !u!81 &62526942
 AudioListener:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 212706963}
+  m_GameObject: {fileID: 62526941}
   m_Enabled: 1
---- !u!124 &212706965
+--- !u!124 &62526943
 Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 212706963}
+  m_GameObject: {fileID: 62526941}
   m_Enabled: 1
---- !u!20 &212706966
+--- !u!20 &62526944
 Camera:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 212706963}
+  m_GameObject: {fileID: 62526941}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
@@ -181,12 +181,12 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!4 &212706967
+--- !u!4 &62526945
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 212706963}
+  m_GameObject: {fileID: 62526941}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -194,6 +194,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream:DVJ2-TP3/Assets/Scenes/Main.unity
 --- !u!1001 &392782848
 Prefab:
   m_ObjectHideFlags: 0
@@ -252,14 +253,17 @@ Prefab:
   m_ParentPrefab: {fileID: 100100000, guid: 11732f2aa266a544ea2d4fa55c42e0c6, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1641772605
+=======
+--- !u!1 &965561256
+>>>>>>> Stashed changes:DVJ2-TP3/Assets/Main.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 1641772607}
-  - component: {fileID: 1641772606}
+  - component: {fileID: 965561258}
+  - component: {fileID: 965561257}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -267,12 +271,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!108 &1641772606
+--- !u!108 &965561257
 Light:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1641772605}
+  m_GameObject: {fileID: 965561256}
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
@@ -303,12 +307,12 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!4 &1641772607
+--- !u!4 &965561258
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1641772605}
+  m_GameObject: {fileID: 965561256}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -316,3 +320,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1282994310
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1282994312}
+  - component: {fileID: 1282994311}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1282994311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1282994310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b4779eada8f063429207f2cb8863652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sun: {fileID: 1991298473105548, guid: b0a6518275a3b47428b04af6daaad7a8, type: 2}
+  Planet01: {fileID: 1601205063004964, guid: 6d49ac1a999caa043b9f2b9d9a62f4d8, type: 2}
+  Planet02: {fileID: 1897763744347628, guid: be300657bcc31c94c9012847ce7a16b7, type: 2}
+  Planet03: {fileID: 1122089351256054, guid: cc16570abb5eb564f92c73f265b6a7b8, type: 2}
+  CantPlanets: 3
+  PlanetsToGenerate: 9
+  PlanetSeparation: 25
+--- !u!4 &1282994312
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1282994310}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
