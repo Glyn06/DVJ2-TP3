@@ -7,19 +7,38 @@ public class Ship : MonoBehaviour {
     public float speed = 10;
     public float rotationSpeed = 10;
     public float angle;
+    public float fuel = 100;
+    public float rateOfConsumptionIDDLE = 1;
+    public float rateOfConsuptionMOVING = 2.5f;
 
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
+
 	void Update () {
+        Movement();
+        FuelConsumption();
+    }
+
+    private float GetRealAngle(Vector3 from, Vector3 to) //Angulo real entre dos vectores
+    {
+        Vector3 right = Vector3.right;
+
+        Vector3 dir = to - from;
+
+        float angleBtw = Vector3.Angle(right, dir);
+        Vector3 cross = Vector3.Cross(right, dir);
+        if (cross.y < 0)
+        {
+            angleBtw = 360 - angleBtw;
+        }
+
+        return angleBtw;
+    }
+    private void Movement() //Movimiento de la nave
+    {
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
 
         Vector3 movement = new Vector3(h * speed, 0, v * speed);
-    
+
         Vector3 lastPosition = transform.position;
 
         Vector3 newPosition = transform.position + movement * Time.deltaTime;
@@ -37,20 +56,11 @@ public class Ship : MonoBehaviour {
             transform.rotation = newRotation;
         }
     }
-
-    private float GetRealAngle(Vector3 from, Vector3 to)
+    private void FuelConsumption() //Consume mas combustible cuando la nave se mueve
     {
-        Vector3 right = Vector3.right;
-
-        Vector3 dir = to - from;
-
-        float angleBtw = Vector3.Angle(right, dir);
-        Vector3 cross = Vector3.Cross(right, dir);
-        if (cross.y < 0)
-        {
-            angleBtw = 360 - angleBtw;
-        }
-
-        return angleBtw;
+        if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+            fuel -= rateOfConsuptionMOVING * Time.deltaTime;
+        else
+            fuel -= rateOfConsumptionIDDLE * Time.deltaTime;
     }
 }
